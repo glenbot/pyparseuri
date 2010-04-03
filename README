@@ -1,0 +1,33 @@
+ParseURI parses URI with the same algorithm as the javascript version
+created by Steven Levithan http://blog.stevenlevithan.com/archives/parseuri
+
+Usage:
+from parse_uri import ParseUri
+p = ParseUri()
+parsed_url = p.parse('http://www.example.com')
+print parsed_uri.authority 
+'www.example.com'
+print parsed_uri.protocol
+'http'
+
+And so on....
+
+Sample Output:
+{	
+	'protocol': 'http', 
+	'authority': 'www.example.com', 
+	'anchor': None, 
+	'relative': '', 
+	'source': 'http://www.example.com', 
+	'host': 'www.example.com', 
+	'userInfo': None, 
+	'file': '', 
+	'queryKey': {}, 
+	'directory': None, 
+	'query': None, 
+	'path': '',
+	'password': None, 
+	'port': None, 
+	'user': None
+}
+
