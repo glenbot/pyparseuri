@@ -4,7 +4,7 @@ created by Steven Levithan http://blog.stevenlevithan.com/archives/parseuri
 Usage:
 from parse_uri import ParseUri
 p = ParseUri()
-parsed_url = p.parse('http://www.example.com')
+parsed_uri = p.parse('http://www.example.com')
 print parsed_uri.authority 
 'www.example.com'
 print parsed_uri.protocol
