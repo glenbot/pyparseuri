@@ -3,6 +3,7 @@
     - Original Script by Steven Levithan <stevenlevithan.com>
       http://blog.stevenlevithan.com/archives/parseuri
     - Ported to python by Glen Zangirolami <theglenbot.com>
+      http://www.github.com/glenbot/pyparseuri
 """
 import re
 
@@ -65,6 +66,5 @@ class ParseUri(object):
             pattern = re.compile(o['q']['parser'], re.IGNORECASE)
             re.sub(pattern, self.parse_query, self.uri['query'])
         
-        return ParseUriDict(**self.uri) 
-        
+        return ParseUriDict(**self.uri)
         
